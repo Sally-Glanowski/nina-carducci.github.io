@@ -20,7 +20,7 @@
 
 	<header>
 		<div class="top-header">
-			<h3 class="name">Nina Carducci</h3>
+			<h1 class="name">Nina Carducci</h1>
 			<div class="nav">   
 
 				<ul>
@@ -61,24 +61,37 @@
 				</button>
 			</div>
 		</div>
-
 </header>
-<main>
 
+<main>
+	<section>
 <div id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.png">
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+		<h2 class="about-me__title">A propos de moi</h3>
+			<!------------>
+		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. 
+			Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit,
+			une lumière et les rendre immortels, voilà ce qui me fait vibrer.
+		</h6>
+		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une
+			envie : le figer au travers de photographies pour le savourer avec les personnes qui sont 
+			importantes à nos yeux, ou le partager au plus grand nombre.
+			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, 
+			mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de 
+			l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur 
+			vos photos.
+		</p>
 	</div>
 </div>
-<div id="gallery">
-	<h3 class="title">Portfolio</h3>
-	<div class="container py-3">
+</section>
+
+<section>
+	<div id="gallery">
+		<h3 class="title">Portfolio</h3>
+			<div class="container py-3">
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"/>
@@ -91,6 +104,8 @@
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"/>
 		</div>
 	</div>
+</section>
+
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -101,57 +116,59 @@
 	</div>
 </div>
 
-<aside>
+<article itemscope itemtype="https://schema.org/Photograph">
 	<div id="services">
 		<h3 class="title">Mes services</h3>
 			<div class="container">
-				<div class="service">
+				<div class="service" itemprop="about" itemscope itemtype="https://schema.org/Service">
 					<div class="service__description">
-						<h3>Shooting photo</h3>
-						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+						<h3 itemprop="name">Shooting photo</h3>
+						<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 					</div>
-					<div class="service__price">
-						<h4>350€/demi journée</h4>
-						<span>Matériel, déplacement inclus</span>
+					<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+						<h4 itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification"><span itemprop="priceCurrency" content="EUR">€</span><span itemprop="price">350</span>/demi journée</h4>
+						<span itemprop="description">Matériel, déplacement inclus</span>
 					</div>
 
 				</div>
-				<div class="service">
+				<div class="service" itemprop="about" itemscope itemtype="https://schema.org/Service">
 					<div class="service__description">
-						<h3>Retouches</h3>
-						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? 
+						<h3 itemprop="name">Retouches</h3>
+						<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? 
 							Bénéficiez d’un rendu optimal pour vos publications</p>
 					</div>
-					<div class="service__price">
-						<h4>50€/photo</h4>
-						<span>2 AR par photo</span>
+					<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+						<h4 itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification"><span itemprop="priceCurrency" content="EUR">€</span><span itemprop="price">50</span>/photo</h4>
+						<span itemprop="description">2 AR par photo</span>
 					</div>
 				</div>
-				<div class="service">
+				<div class="service" itemprop="about" itemscope itemtype="https://schema.org/Service">
 					<div class="service__description">
-						<h3>Album photos</h3>
-						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble 
+						<h3 itemprop="name">Album photos</h3>
+						<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble 
 						à travers un album photo personnalisé
 						</p>
 					</div>
-					<div class="service__price">
-						<h4>400€ album A4</h4>
-						<span>30 pages recto/verso</span>
+					<div class="service__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+						<h4 itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification"><span itemprop="priceCurrency" content="EUR">€</span><span itemprop="price">400</span> album A4</h4>
+						<span itemprop="description">30 pages recto/verso</span>
 					</div>
 				</div>
 			</div>
-		</div>
-	</aside>
+        
+    </div>
 
-<div class="quote">
-	<figure>
-		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
-		</blockquote>
-		<figcaption class="quote__author">- Richard Avedon</figcaption>
-	</figure>
-</div>
-
+    <div class="quote">
+        <figure itemscope itemtype='https://schema.org/Quotation'>
+            <blockquote>
+                <h1 class='quote__text'  itemprop='text'>De manière inconsciente, je crois, je guette un regard, une expression, 
+                    des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie
+                </h1>
+            </blockquote>
+            <figcaption class='quote__author'  itemprop='author'>- Richard Avedon</figcaption>
+        </figure>
+    </div>
+	</article>
 </main>
 
 <footer>

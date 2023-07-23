@@ -239,8 +239,8 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(".active.active-tag").removeClass("active active-tag"); //erreur de class ici
+      $(this).addClass("active-tag active");// erreur de class ici
 
       var tag = $(this).data("images-toggle");
 

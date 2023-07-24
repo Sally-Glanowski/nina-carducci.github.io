@@ -17,7 +17,27 @@
 	<meta name="instagram:description" content="Photographe passionnée, située à Bordeaux pour des shooting photo.">
 	<meta name="instagram:image" content="https://github.com/Sally-Glanowski/nina-carducci.sally-glanowski.github.io/blob/master/assets/images/instagram.png">
 	
-
+	<script>
+		// Expiration de cache pour les images
+		document.addEventListener("DOMContentLoaded", function() {
+		  var images = document.querySelectorAll("img");
+		  var oneYearInSeconds = 31536000;
+		  var currentTime = new Date().getTime() / 1000;
+	
+		  for (var i = 0; i < images.length; i++) {
+			var image = images[i];
+			if (!image.getAttribute("data-no-cache")) {
+			  var imageUrl = image.getAttribute("src");
+			  if (imageUrl) {
+				image.setAttribute("loading", "lazy");
+				image.setAttribute("decoding", "async");
+				image.setAttribute("loading", "lazy");
+				image.src = imageUrl + "?v=" + currentTime + oneYearInSeconds;
+			  }
+			}
+		  }
+		});
+	  </script>
 
 	<script type="application/ld+json">
 		{

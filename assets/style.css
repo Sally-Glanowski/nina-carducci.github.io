@@ -85,11 +85,13 @@ body {
 	font-family: "Spectral", sans-serif;
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
+	width: 85%;
+	font-size: 17px;
   }
   #about-me p {
 	width: 80%;
 	font-size: 14px;
+	line-height: 1.3rem;
   }
   
   #gallery {
@@ -98,6 +100,7 @@ body {
   .title {
 	text-align: center;
 	padding-block: 2em;
+	font-size: 27px;
   }
   .gallery .nav {
 	justify-content: center;
@@ -105,7 +108,7 @@ body {
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
 	color: white;
-	background-color: #af9f0f;
+	background-color: #978908;
 	border-radius: 0;
   }
   .nav-link:hover {
@@ -159,6 +162,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 37px;
   }
   .quote__author {
 	font-family: Spectral;
@@ -199,7 +203,15 @@ body {
 	justify-content: space-between;
 	z-index: 1;
   }
+
+  .service h5{
+	font-size: 27px;
+  }
   
+  .service h6{
+
+font-size: 24px;
+  }
   #contact {
 	margin: auto;
 	background-color: #d8d3a8;

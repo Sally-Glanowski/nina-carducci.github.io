@@ -5,6 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nina Carducci - Photographe Professionnelle à Bordeaux</title>
+	<style>
+        .carousel-item {
+            width: 100%;
+            height: 530px; /* Ajustez la hauteur selon vos besoins */
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+		</style>
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,28 +30,8 @@
 	<meta name="instagram:title" content="Nina Carducci">
 	<meta name="instagram:description" content="Photographe passionnée, située à Bordeaux pour des shooting photo.">
 	<meta name="instagram:image" content="https://github.com/Sally-Glanowski/nina-carducci.sally-glanowski.github.io/blob/master/assets/images/instagram.png">
+	<meta http-equiv="Cache-Control" content="max-age=604800">
 	
-	<script>
-		// Expiration de cache pour les images
-		document.addEventListener("DOMContentLoaded", function() {
-		  var images = document.querySelectorAll("img");
-		  var oneYearInSeconds = 31536000;
-		  var currentTime = new Date().getTime() / 1000;
-	
-		  for (var i = 0; i < images.length; i++) {
-			var image = images[i];
-			if (!image.getAttribute("data-no-cache")) {
-			  var imageUrl = image.getAttribute("src");
-			  if (imageUrl) {
-				image.setAttribute("loading", "lazy");
-				image.setAttribute("decoding", "async");
-				image.setAttribute("loading", "lazy");
-				image.src = imageUrl + "?v=" + currentTime + oneYearInSeconds;
-			  }
-			}
-		  }
-		});
-	  </script>
 
 	<script type="application/ld+json">
 		{
@@ -102,7 +96,7 @@
 						<li><a href="#services" title="connaître les prestations">Service</a></li>
 						<li><a href="#contact" title="besoin de me contacter?">Contact</a></li>
 						<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" 
-						target="_blank" aria-label="Lien vers Instagram"><img src="assets/images/instagram.webp" alt="icone lien site instagram"></a></li>
+						target="_blank" aria-label="Lien vers Instagram"><img width="20" height="20"src="assets/images/instagram.webp" alt="icone lien site instagram"></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -117,15 +111,15 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
+						<img  width="400" height="400"src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
 						class="d-block w-100" alt="homme en costume qui traverse un passage piéton" loading="lazy">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+						<img width="400" height="400" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
 						 class="d-block w-100" alt="foule qui danse" loading="lazy">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" 
+						<img width="400" height="400" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" 
 						class="d-block w-100" alt="couple de mariés qui s'embrassent" loading="lazy">
 					</div>
 				</div>

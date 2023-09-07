@@ -134,6 +134,9 @@ body {
 	object-fit: cover;
 	padding: 0.5em;
   }
+  .gallery-item:hover{
+	cursor:pointer;
+  }
   .modal-dialog {
 	height: 100vh;
 	display: flex;

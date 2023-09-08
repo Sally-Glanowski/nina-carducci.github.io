@@ -348,14 +348,22 @@ font-size: 24px;
 	.top-header {
 	  flex-direction: column;
 	  padding-inline: 0;
+	  position: fixed;
+	  width: 100%;
+	  height: auto;
+	}
+
+	.nav{
+		justify-content: center;
 	}
 	.top-header .nav,
 	.top-header .nav ul {
 	  width: 100%;
 	  padding: 0 0 0 0;
+	  gap:15px;
 	}
 	.top-header .nav li {
-	  flex: 1;
+	  
 	  padding-block: 1em;
 	  text-align: center;
 	}
@@ -380,4 +388,24 @@ font-size: 24px;
 	.picture {
 	  width: 80%;
 	}
+	.carousel-item{
+	  height: auto;
+	  margin-top: 150px;
+	}
+
+	.quote__text{
+	font-family: Spectral;
+    font-style: italic;
+    font-weight: 100;
+	line-height: 1.1em;
+	font-size: 31px;
+}
+	.carousel-control-prev
+	{
+		margin-top: 160px;
+	}
+	.carousel-control-next{
+		margin-top: 160px;
+	}
+
   }

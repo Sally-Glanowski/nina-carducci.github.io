@@ -267,6 +267,9 @@ font-size: 24px;
 	background-color: #beb45a;
 	padding: 0.5em 1em;
   }
+  .photos-seules{
+	object-fit: cover;
+  }
   
   
   @media all and (max-width: 1180px) {
